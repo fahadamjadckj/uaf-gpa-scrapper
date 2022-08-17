@@ -4,9 +4,9 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "pyDep:install": "cd ./pyScripts && pip3 install -r requirements.txt",
-    "tkinter:install": "sudo apt-get install python3-tk",
-    "start": "NODE_ENV=production node index.js"
+    "start": "NODE_ENV=production node index.js",
+    "test": "jest --verbose"
+
   },
   "keywords": [],
   "author": "",
@@ -15,6 +15,7 @@
     "express": "^4.18.1",
     "express-async-errors": "^3.1.1",
     "helmet": "^5.1.1",
+    "jest": "^28.1.3",
     "puppeteer": "^16.1.1",
     "python-shell": "^3.0.1"
   }
