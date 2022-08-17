@@ -1,0 +1,21 @@
+{
+  "name": "gpa-calculator",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "pyDep:install": "cd ./pyScripts && pip3 install -r requirements.txt",
+    "tkinter:install": "sudo apt-get install python3-tk",
+    "start": "NODE_ENV=production node index.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.18.1",
+    "express-async-errors": "^3.1.1",
+    "helmet": "^5.1.1",
+    "puppeteer": "^16.1.1",
+    "python-shell": "^3.0.1"
+  }
+}
