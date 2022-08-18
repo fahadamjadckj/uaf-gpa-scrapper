@@ -5,10 +5,13 @@ const getData = require('./utils/dataScraper')
 const { sortBySemesters, gpaCalculator } = require('./utils/semesterCount')
 const helmet = require('helmet')
 const { student } = require('./data')
+const cors = require('cors')
 
 const app = express()
 
-app.use(helmet())
+// app.use(helmet())
+app.use(cors())
+app.use(express.static('build'))
 app.use(express.json())
 app.use(express.urlencoded({ extended: false }))
 
@@ -20,6 +23,6 @@ app.get('/results/:reg', async (req, res, next) => {
 })
 
 app.use(unknownRouteHandler)
-// app.use(errorHandler)
+app.use(errorHandler)
 
 module.exports = app
