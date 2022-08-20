@@ -38,4 +38,6 @@ async function getData(regNumber) {
   return data
 }
 
+///asome asdasd
+
 module.exports = getData
